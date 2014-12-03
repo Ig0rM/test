@@ -1,0 +1,23 @@
+<div role="tabpanel" class="tab-pane active" id="home">
+	<div id="homeContent">
+		<!-- <tagger ng-model="tags" options="options"/> -->
+	  <div class="row">
+
+	  	<div class="col-md-7">
+	  			<div id="tagField">
+	  			</div>
+		  		<!-- <tags-input ng-model="tags"> -->
+			    <input type="text" name="employeeTags" ng-model="selected" typeahead="employee.name for employee in employees | filter: $viewValue | limitTo:8" class="form-control tm-input inputTagRow" typeahead-on-select='onSelect($item, $model, $label)'>
+					<!-- </tags-input> -->
+				</div>
+				<div class="col-md-2">
+		  	<button type="button" id="refreshButton" class="btn btn-default disabled" ng-click="refresh()">Refresh</button>
+		  </div>
+
+		</div>
+		
+	</div>
+</div>
+
+<!-- 
+<input type="text" ng-model="selected" ng-click="addEmployees(selected)" typeahead="employee.name for employee in employees | filter: $viewValue | limitTo:8" class="form-control tm-input inputTagRow" typeahead-on-select='onSelect($item, $model, $label)'> -->

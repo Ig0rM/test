@@ -1,0 +1,27 @@
+<div role="tabpanel" class="tab-pane" id="profile">
+  <div id="profileContent">
+
+            <div id="employeeTable">
+
+              <div class="row tableHeader">
+                <div class="col-md-4 col-md-offset-0 tableHeaderCol">Name</div>
+                <div class="col-md-3 col-md-offset-0 tableHeaderCol">Job title</div>
+                <div class="col-md-1 col-md-offset-0 tableHeaderCol">Age</div>
+                <div class="col-md-2 col-md-offset-0 tableHeaderCol">Grade</div>
+              </div>
+
+              <div class="row employeeRow"  ng-repeat="employee in employees">
+                <div >
+                  <div class="col-md-4 col-md-offset-0 employeeCol" ng-click="addFromTableByName(employee)" tooltip-placement="left" tooltip="Grade: {{employee.grade}} Specialozation: {{employee.job}}">{{employee.name}}</div>
+                  <div class="col-md-3 col-md-offset-0 employeeCol" ng-click="showComments(employee.id)">{{employee.job}}</div>
+                  <div class="col-md-1 col-md-offset-0 employeeCol" ng-click="showComments(employee.id)">{{employee.age}}</div>
+                  <div class="col-md-2 col-md-offset-0 employeeCol" ng-click="showComments(employee.id)">{{employee.grade}}</div>
+                  <div class="col-md-10 col-md-offset-0 employeeCommentsCol" id="comments-{{employee.id}}">{{employee.id}}</div>
+                </div>
+              </div>
+
+            </div>
+
+  </div>
+</div>
+

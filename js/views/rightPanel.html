@@ -1,0 +1,27 @@
+<div id="addNew">
+  <div class="col-xs-4">
+
+ <input type="text" ng-model="newTeam" class="form-control" placeholder="Add new team" name="newTeamName" ng-pattern="teamNamePattern" ng-change="changeText(newTeam)" ng-minlength='1' required/>
+<span ng-show="newTeamName.$error.required">Please enter something!</span>
+
+
+  </div>
+  <button id="addTeamButton" type="button" class="btn btn-default disabled" ng-click="addTeam(newTeam)">+</button>
+</div>
+
+                            <accordion close-others="true" >
+                                  <accordion-group  is-open="isopen"
+                                      ng-repeat="(company, employees) in companies" 
+                                      ng-controller="ItemController">
+                                      <accordion-heading>
+                                        <div class="company" ng-click="choseCompany(company)">{{company}}</div>
+                                          
+                                      </accordion-heading>
+
+                                      <div ng-repeat="employee in employees" tooltip-placement="left" tooltip="Grade: {{employee.grade}} Specialozation: {{employee.job}}">{{employee.name}}<a class='delEmployee' ng-click="delEmployee(employee.name)" id='del-{{employee.id}}'> x</a></div>
+                                  </accordion-group>
+                              </accordion>
+                   
+
+
+                  

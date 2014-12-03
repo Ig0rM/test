@@ -1,0 +1,46 @@
+[
+    {
+    	"name" : "John Ivanovich", 
+    	"job" : "Web Dev", 
+    	"age" : "37",
+    	"grade" : "Senior",
+        "team" : "1st team",
+        "comments": "Lorem ipsum John"
+    },
+
+    {
+    	"name" : "Vasya Rashidov", 
+    	"job" : "Java", 
+    	"age" : "32",
+    	"grade" : "Senior",
+        "team" : "2nd team",
+        "comments": "Lorem ipsum Vasya"
+    },
+
+    {
+    	"name" : "Rashid Petrov", 
+    	"job" : "C++", 
+    	"age" : "27",
+    	"grade" : "Middle",
+        "team" : "1st team",
+        "comments": "Lorem ipsum Rashid"
+    },
+
+    {
+        "name" : "Petya Ivanov", 
+        "job" : ".Net", 
+        "age" : "22",
+        "grade" : "Junior",
+        "team" : "1st team",
+        "comments": "Lorem ipsum Petya"
+    },
+
+    {
+        "name" : "Ali Mahmud", 
+        "job" : "Ruby", 
+        "age" : "29",
+        "grade" : "Middle",
+        "team" : "2nd team",
+        "comments": "Lorem ipsum Ali"
+    }
+]
